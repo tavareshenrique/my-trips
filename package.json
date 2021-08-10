@@ -32,8 +32,6 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-typescript": "^7.14.5",
-    "@storybook/addon-essentials": "6.3.4",
-    "@storybook/react": "6.3.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@types/jest": "^26.0.24",
@@ -56,7 +54,6 @@
     "lint-staged": "^11.0.1",
     "plop": "^2.7.4",
     "prettier": "^2.3.2",
-    "storybook-addon-next-router": "^3.0.5",
     "typescript": "^4.3.5"
   }
 }
