@@ -2,6 +2,8 @@ import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 
 import { IMapProps } from './@interfaces'
 
+export type MapProps = IMapProps
+
 export default function Map({ places }: IMapProps) {
   return (
     <MapContainer
