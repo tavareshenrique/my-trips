@@ -6,7 +6,7 @@ import { GET_PLACES } from 'graphql/queries'
 
 import HomeTemplate from 'templates/Home'
 
-import { HomeProps } from './@types/pages/Home'
+import { HomeProps } from '../@types/pages/Home'
 
 export default function Home({ places }: HomeProps) {
   return <HomeTemplate places={places} />
