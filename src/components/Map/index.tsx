@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 
 import { IMapProps } from './@interfaces'
@@ -5,6 +6,8 @@ import { IMapProps } from './@interfaces'
 export type MapProps = IMapProps
 
 export default function Map({ places }: IMapProps) {
+  const router = useRouter()
+
   return (
     <MapContainer
       center={[0, 0]}
@@ -16,14 +19,19 @@ export default function Map({ places }: IMapProps) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      {places?.map((place) => {
-        const { latitude, longitude } = place.location
+      {places?.map(({ id, location, name, slug }) => {
+        const { latitude, longitude } = location
 
         return (
           <Marker
-            key={`place-${place.id}`}
+            key={`place-${id}`}
             position={[latitude, longitude]}
-            title={place.name}
+            title={name}
+            eventHandlers={{
+              click: () => {
+                router.push(`place/${slug}`)
+              }
+            }}
           />
         )
       })}
