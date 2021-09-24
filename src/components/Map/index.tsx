@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { MapContainer, TileLayer, Marker } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, MapConsumer } from 'react-leaflet'
 
 import { IMapProps } from './@interfaces'
 import * as S from './styles'
@@ -40,6 +40,21 @@ export default function Map({ places }: IMapProps) {
         worldCopyJump
         style={{ height: '100%', width: '100%' }}
       >
+        <MapConsumer>
+          {(map) => {
+            const width =
+              window.innerWidth ||
+              document.documentElement.clientWidth ||
+              document.body.clientWidth
+
+            if (width < 768) {
+              map.setMinZoom(2)
+            }
+
+            return null
+          }}
+        </MapConsumer>
+
         <CustomTileLayer />
 
         {places?.map(({ id, location, name, slug }) => {
