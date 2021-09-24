@@ -33,6 +33,10 @@ export default function Map({ places }: IMapProps) {
         center={[0, 0]}
         zoom={3}
         minZoom={3}
+        maxBounds={[
+          [-180, 180],
+          [180, -180]
+        ]}
         style={{ height: '100%', width: '100%' }}
       >
         <CustomTileLayer />
