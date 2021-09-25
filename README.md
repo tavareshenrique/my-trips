@@ -1,58 +1,115 @@
+<div align="center">
+   <img src="https://raw.githubusercontent.com/tavareshenrique/my-trips/main/public/img/icon-512.png" alt="My Trips" width="280"/>
+   <h3>My Trips</h3>
+</div>
 
-![React Avançado](https://raw.githubusercontent.com/React-Avancado/boilerplate/master/public/img/logo-gh.svg)
+<p align="center">
+   <a href="https://www.linkedin.com/in/tavareshenrique/">
+      <img alt="Henrique Tavares" src="https://img.shields.io/badge/-Henrique Tavares-FB531A?style=flat&logo=Linkedin&logoColor=white" />
+   </a>
 
-This is a [Next.js](https://nextjs.org/) boilerplate to be used in a course called [React Avançado](https://reactavancado.com.br/).
-![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
-## What is inside?
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-FB531A">
+</p>
 
-This project uses lot of stuff as:
+> <b>my trips</b> A simple project to show my favorite spots in the world.
 
-- [TypeScript](https://www.typescriptlang.org/)
+<div align="center">
+  <sub><strong>my trips</strong> was developed with ❤︎ by
+    <a href="https://github.com/tavareshenrique">Henrique Tavares</a>
+  </sub>
+  </br >
+  <sub>This project was developed during the course
+    <a href="https://www.udemy.com/share/104bQC3@LdVpx5Jv7gNd4NWPCHwb2b9S_6uxFcBWsPmz_wqG1pjy_L3N_5bN6vmzhd_I8gvY/">Aprenda NextJS, GraphQL/GraphCMS e Leaflet na prática!</a>
+  </sub>
+</div>
+
+# :pushpin: Content
+
+- [Technologies](#computer-technologies)
+- [Running](#construction_worker-running)
+- [Author](#computer-author)
+- [License](#closed_book-license)
+
+# :computer: Technologies
+
+This project was made using the following technologies:
+
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
+- [Graphql](https://graphql.org/)
+- [Leaflet](https://leafletjs.com/)
+- [React Leaflet](https://react-leaflet.js.org/)
+- [Mapbox](https://www.mapbox.com/)
+- [Next PWA](https://github.com/drenther/next-pwa)
+- [Next SEO](https://github.com/garmeeh/next-seo)
+- [Next Sitemap](https://github.com/iamvishnusankar/next-sitemap)
+- [Next Progressbar](https://github.com/beeinger/next-progress#readme)
+- [Styled Components](https://styled-components.com/docs/basics)
+- [Jest](https://jestjs.io/pt-BR/)
 - [Husky](https://github.com/typicode/husky)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
-## Getting Started
-
-First, run the development server:
+# :construction_worker: Running
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone the Repository
+git@github.com:tavareshenrique/my-trips.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+# Create an .env.local file based on the env.local.example file and set the environment variables.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# GraphQL
+GRAPHQL_HOST=
+GRAPHQL_TOKEN=
 
-## Commands
+# MapBox
+NEXT_PUBLIC_MAPBOX_API_KEY=
+NEXT_PUBLIC_MAPBOX_USERID=
+NEXT_PUBLIC_MAPBOX_STYLEID=
+```
 
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
+```bash
+# Create an .env.production.local file based on the .env.production.example file and set the environment variables.
 
-## Learn More
+# Analytics
+NEXT_PUBLIC_GA_TRACKING=G-VDD5KNQL8W
+```
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Download dependencies
+$ yarn
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Run
+$ yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Go to <http://localhost:3000> to see the result.
 
-## Deploy on Vercel
+# :computer: Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<table>
+   <tr>
+      <td align="center">
+         <a href="http://github.com/tavareshenrique/">
+            <img src="https://avatars1.githubusercontent.com/u/27022914?v=4" width="100px;" alt="Henrique Tavares"/>
+            <br />
+            <sub>
+               <b>Henrique Tavares</b>
+            </sub>
+          </a>
+          <br />
+          <a href="https://www.linkedin.com/in/tavareshenrique/" title="Linkedin">@tavareshenrique</a>
+          <br />
+          <a href="https://github.com/tavareshenrique/fastfeet-api/commits?author=tavareshenrique" title="Code">💻</a>
+      </td>
+   </tr>
+</table>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# :closed_book: License
+
+This project is under the license [MIT](./LICENSE).
