@@ -5,10 +5,10 @@
 
 <p align="center">
    <a href="https://www.linkedin.com/in/tavareshenrique/">
-      <img alt="Henrique Tavares" src="https://img.shields.io/badge/-Henrique Tavares-FB531A?style=flat&logo=Linkedin&logoColor=white" />
+      <img alt="Henrique Tavares" src="https://img.shields.io/badge/-Henrique Tavares-FF63C1?style=flat&logo=Linkedin&logoColor=white" />
    </a>
 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-FB531A">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-FF63C1">
 </p>
 
 > <b>my trips</b> A simple project to show my favorite spots in the world.
