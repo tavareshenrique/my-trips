@@ -75,7 +75,7 @@ NEXT_PUBLIC_MAPBOX_STYLEID=
 # Create an .env.production.local file based on the .env.production.example file and set the environment variables.
 
 # Analytics
-NEXT_PUBLIC_GA_TRACKING=G-VDD5KNQL8W
+NEXT_PUBLIC_GA_TRACKING=
 ```
 
 ```bash
